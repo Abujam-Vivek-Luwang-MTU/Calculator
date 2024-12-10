@@ -10,20 +10,19 @@ void main() {
   scanf("%lf %lf", &a, &b);
 
   switch (option) {
-    case '+':
+    case '+': //addition
       printf("%.1lf + %.1lf = %.1lf", a, b, a+b);
       break;
-    case '-':
+    case '-': //subtraction
       printf("%.1lf - %.1lf = %.1lf", a, b, a-b);
       break;
-    case '*':
+    case '*': //multiplication
       printf("%.1lf * %.1lf = %.1lf", a, b, a*b);
       break;
-    case '/':
+    case '/': //division
       printf("%.1lf / %.1lf = %.1lf", a, b, a/b);
       break;
-    // operator doesn't match any case constant
-    default:
+    default: //when the option is not an arithmetic operation 
       printf("Error! The option is invalid");
   }
 
